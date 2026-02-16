@@ -1,0 +1,40 @@
+{
+    "FunctionName": "get-products",
+    "FunctionArn": "arn:aws:lambda:us-east-1:682366719001:function:get-products",
+    "Runtime": "python3.9",
+    "Role": "arn:aws:iam::682366719001:role/lambda-products-role",
+    "Handler": "lambda_function.lambda_handler",
+    "CodeSize": 519,
+    "Description": "",
+    "Timeout": 3,
+    "MemorySize": 128,
+    "LastModified": "2026-02-16T06:33:33.000+0000",
+    "CodeSha256": "xw8bjIMid9cSccf50lmZMwZ0QavTvAxTLMgyCU2yza0=",
+    "Version": "$LATEST",
+    "TracingConfig": {
+        "Mode": "PassThrough"
+    },
+    "RevisionId": "c83fe860-3552-4cb5-9a86-b069097ed570",
+    "State": "Active",
+    "LastUpdateStatus": "InProgress",
+    "LastUpdateStatusReason": "The function is being created.",
+    "LastUpdateStatusReasonCode": "Creating",
+    "PackageType": "Zip",
+    "Architectures": [
+        "x86_64"
+    ],
+    "EphemeralStorage": {
+        "Size": 512
+    },
+    "SnapStart": {
+        "ApplyOn": "None",
+        "OptimizationStatus": "Off"
+    },
+    "RuntimeVersionConfig": {
+        "RuntimeVersionArn": "arn:aws:lambda:us-east-1::runtime:9af3f4666bc1f0e6c0b9b32f72a8b726527619489199508620f31da683503c4a"
+    },
+    "LoggingConfig": {
+        "LogFormat": "Text",
+        "LogGroup": "/aws/lambda/get-products"
+    }
+}

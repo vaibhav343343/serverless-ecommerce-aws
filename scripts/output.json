@@ -1,0 +1,1 @@
+{"statusCode": 500, "body": "{\"error\": \"Object of type Decimal is not JSON serializable\"}"}

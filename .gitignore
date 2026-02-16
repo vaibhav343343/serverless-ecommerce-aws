@@ -1,0 +1,51 @@
+# Python
+__pycache__/
+*.pyc
+venv/
+.env
+*.pyc
+.pytest_cache/
+
+# Build files
+*.zip
+dist/
+build/
+*.egg-info/
+
+# Node / Frontend
+node_modules/
+package-lock.json
+frontend/dist/
+frontend/build/
+
+# AWS SAM / Serverless
+.aws-sam/
+samconfig.toml
+.serverless/
+
+# Logs
+*.log
+logs/
+*.logs
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Large installers
+aws-sam-cli-linux-x86_64.zip
+sam-install/
+*.tar.gz
+*.tgz
+
+# Terraform (agar use kiya to)
+*.tfstate
+*.tfstate.backup
+.terraform/
