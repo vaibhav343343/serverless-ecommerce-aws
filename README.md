@@ -9,10 +9,10 @@
   <img src="https://img.shields.io/badge/SNS-FF4F8B?style=for-the-badge&logo=amazon-sns&logoColor=white" alt="SNS"/>
   <img src="https://img.shields.io/badge/IAM-FF9900?style=for-the-badge&logo=amazon-iam&logoColor=white" alt="IAM"/>
   <img src="https://img.shields.io/badge/CloudFormation-FF9900?style=for-the-badge&logo=amazon-cloudformation&logoColor=white" alt="CloudFormation"/>
-  <img src="https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black" alt="React"/>
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python"/>
   <img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white" alt="GitHub Actions"/>
 </p>
+
 ---
 
 ## 📌 **Project Overview**
