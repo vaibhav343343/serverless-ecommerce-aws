@@ -1,0 +1,73 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Description: 'Serverless E-Commerce Platform'
+
+Parameters:
+  Environment:
+    Type: String
+    Default: prod
+    AllowedValues: [dev, prod]
+
+Resources:
+  # DynamoDB Tables
+  ProductsTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: Products
+      AttributeDefinitions:
+        - AttributeName: productId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: productId
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+
+  OrdersTable:
+    Type: AWS::DynamoDB::Table
+    Properties:
+      TableName: Orders
+      AttributeDefinitions:
+        - AttributeName: orderId
+          AttributeType: S
+        - AttributeName: userId
+          AttributeType: S
+      KeySchema:
+        - AttributeName: orderId
+          KeyType: HASH
+      BillingMode: PAY_PER_REQUEST
+
+  # Lambda Functions
+  GetProductsFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: get-products
+      Runtime: python3.9
+      Handler: lambda_function.lambda_handler
+      Code: backend/get-products/
+      Environment:
+        Variables:
+          PRODUCTS_TABLE: !Ref ProductsTable
+      Role: !GetAtt LambdaExecutionRole.Arn
+
+  PlaceOrderFunction:
+    Type: AWS::Lambda::Function
+    Properties:
+      FunctionName: place-order
+      Runtime: python3.9
+      Handler: lambda_function.lambda_handler
+      Code: backend/place-order/
+      Environment:
+        Variables:
+          ORDERS_TABLE: !Ref OrdersTable
+          PRODUCTS_TABLE: !Ref ProductsTable
+      Role: !GetAtt LambdaExecutionRole.Arn
+
+  # API Gateway
+  ApiGateway:
+    Type: AWS::ApiGateway::RestApi
+    Properties:
+      Name: Products API
+
+Outputs:
+  ApiUrl:
+    Description: API Gateway URL
+    Value: !Sub "https://${ApiGateway}.execute-api.${AWS::Region}.amazonaws.com/prod"
