@@ -1,0 +1,33 @@
+# ====================================
+# AWS INFRASTRUCTURE CONFIGURATION
+# Project: Serverless E-Commerce
+# Date: 16-Feb-2026
+# ====================================
+
+# === API GATEWAY ===
+API_GATEWAY_ID="xbnff4ak5e"
+API_GATEWAY_URL="https://xbnff4ak5e.execute-api.us-east-1.amazonaws.com/prod"
+
+# === CLOUDFRONT ===
+CLOUDFRONT_ID="EM10UTSO02LNZ"
+CLOUDFRONT_URL="https://d36m941u6p5v16.cloudfront.net"
+
+# === SNS ===
+SNS_TOPIC_ARN="arn:aws:sns:us-east-1:682366719001:order-notifications"
+
+# === S3 BUCKET ===
+S3_BUCKET="flashsale-frontend-682366719001"
+S3_WEBSITE_URL="http://flashsale-frontend-682366719001.s3-website-us-east-1.amazonaws.com"
+
+# === LAMBDA ROLES ===
+LAMBDA_PRODUCTS_ROLE="arn:aws:iam::682366719001:role/lambda-products-role"
+LAMBDA_ORDER_ROLE="arn:aws:iam::682366719001:role/place-order-role"
+
+# === DYNAMODB TABLES ===
+DYNAMODB_PRODUCTS="Products"
+DYNAMODB_ORDERS="Orders"
+DYNAMODB_USERS="Users"
+
+# === ACCOUNT DETAILS ===
+AWS_ACCOUNT_ID="682366719001"
+AWS_REGION="us-east-1"
