@@ -19,10 +19,10 @@
 
 A **production-ready serverless e-commerce platform** designed to handle **flash sale traffic spikes** (Diwali, Black Friday, Amazon Prime Day). 
 
-### 🎯 **Problem It Solves**
+### 🎯 Problem It Solves
 Traditional e-commerce websites crash during flash sales due to sudden traffic spikes. This serverless solution **auto-scales infinitely** and **costs zero** when not in use.
 
-### ✅ **Key Achievements**
+### ✅ Key Achievements
 - ⏱️ **Built in just 1 day** — Demonstrates rapid learning & execution
 - 💰 **Zero cost operation** — 100% within AWS Free Tier
 - 📈 **Handles thousands of concurrent users** — Auto-scales automatically
@@ -31,10 +31,10 @@ Traditional e-commerce websites crash during flash sales due to sudden traffic s
 
 ---
 
-## 🏗️ **Architecture**
+## 🏗️ Architecture
 <img width="1024" height="1230" alt="ChatGPT Image Feb 17, 2026, 02_46_33 PM" src="https://github.com/user-attachments/assets/54e9f76b-5bd9-4dbc-8614-fcf584d9b60f" />
 
-### 📊 **Data Flow**
+### 📊 Data Flow
 1. **User visits website** → CloudFront serves React app from S3
 2. **User browses products** → API Gateway calls `get-products` Lambda → Fetches from DynamoDB
 3. **User places order** → API Gateway calls `place-order` Lambda → Saves to DynamoDB → Triggers SNS
@@ -42,9 +42,9 @@ Traditional e-commerce websites crash during flash sales due to sudden traffic s
 
 ---
 
-## ✨ **Features That Impress Recruiters**
+## ✨ Features That Impress Recruiters
 
-### 🛍️ **User Experience**
+### 🛍️ User Experience
 | Feature | Description |
 |---------|-------------|
 | **📱 Product Catalog** | Browse products with real-time inventory |
@@ -53,7 +53,7 @@ Traditional e-commerce websites crash during flash sales due to sudden traffic s
 | **🎨 Responsive Design** | Mobile-friendly React frontend |
 | **⚡ Fast Loading** | CloudFront CDN for global low-latency |
 
-### ⚙️ **Technical Excellence**
+### ⚙️ Technical Excellence
 | Feature | Description |
 |---------|-------------|
 | **⚡ Serverless** | Zero servers to manage — AWS Lambda handles everything |
@@ -66,9 +66,9 @@ Traditional e-commerce websites crash during flash sales due to sudden traffic s
 
 ---
 
-## 🛠️ **Complete Tech Stack**
+## 🛠️ Complete Tech Stack
 
-### ☁️ **AWS Services (8+ Services)**
+### ☁️ AWS Services (8+ Services)
 | Service | Purpose | Why It Matters |
 |---------|---------|----------------|
 | **Lambda** | Python backend for products & orders | Serverless compute |
