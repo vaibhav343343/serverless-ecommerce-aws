@@ -7,3 +7,29 @@ A production-ready serverless e-commerce platform built to handle **flash sale t
 ---
 <p align="center"> <img src="architecture-dark.png" alt="Serverless Architecture Diagram" width="700"/> </p>
 ---
+
+## 🛠️ **Tech Stack**
+
+| Layer | Technology | Purpose |
+|-------|------------|---------|
+| **Frontend** | React + Vite | User interface |
+| **Hosting** | S3 + CloudFront | Global CDN |
+| **API Layer** | API Gateway | REST endpoints |
+| **Business Logic** | Lambda (Python) | Serverless compute |
+| **Database** | DynamoDB | NoSQL storage |
+| **Notifications** | SNS | Email alerts |
+| **CI/CD** | GitHub Actions | Auto-deployment |
+| **Infrastructure** | AWS CLI + CloudFormation | IaC |
+
+---
+
+## 📊 **API Endpoints**
+
+| Method | Endpoint | Description | Request Body |
+|--------|----------|-------------|--------------|
+| `GET` | `/products` | Get all products | - |
+| `POST` | `/orders` | Place new order | `{ "userId": "user123", "productId": "123", "quantity": 2 }` |
+
+---
+
+## 📧 **Sample Email Notification**
