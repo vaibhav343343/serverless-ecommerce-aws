@@ -6,7 +6,7 @@
 A production-ready serverless e-commerce platform built to handle **flash sale traffic spikes** (Diwali, Black Friday, Amazon Prime Day). Automatically scales from 0 to thousands of requests without any server management.
 ---
 <p align="center"> <img src="architecture-dark.png" alt="Serverless Architecture Diagram" width="700"/> </p>
----
+
 
 ## 🛠️ **Tech Stack**
 
