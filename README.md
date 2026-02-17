@@ -145,18 +145,18 @@ Step-by-Step Deployment
 git clone https://github.com/vaibhav343343/serverless-ecommerce-aws.git
 cd serverless-ecommerce-aws
 
-# 2. Setup Python virtual environment
+### 2. Setup Python virtual environment
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 pip install boto3
 
-# 3. Deploy backend infrastructure (CloudFormation)
+### 3. Deploy backend infrastructure (CloudFormation)
 aws cloudformation deploy \
   --template-file template.yaml \
   --stack-name ecommerce-stack \
   --capabilities CAPABILITY_IAM
 
-**# 4. Build and deploy frontend**
+### 4. Build and deploy frontend
 cd frontend
 npm install
 npm run build
@@ -164,16 +164,17 @@ aws s3 mb s3://your-unique-bucket-name
 aws s3 website s3://your-unique-bucket-name --index-document index.html
 aws s3 sync dist/ s3://your-unique-bucket-name/ --delete
 
-# 5. Seed products database
+### 5. Seed products database
 cd ..
 python3 scripts/seed-products.py
 
-# 6. Get your live URLs
+### 6. Get your live URLs
 echo "✅ Frontend URL: http://your-unique-bucket-name.s3-website-us-east-1.amazonaws.com"
 echo "✅ API URL: https://xbnff4ak5e.execute-api.us-east-1.amazonaws.com/prod"
 
 ---
-📁 Project Structure
+
+### 📁 Project Structure
 serverless-ecommerce-python/
 ├── 📂 frontend/                 # React application
 │   ├── 📂 src/                  # React components
