@@ -117,11 +117,10 @@ curl -X POST https://xbnff4ak5e.execute-api.us-east-1.amazonaws.com/prod/orders 
   ```
 ---
 📧 Email Notification (SNS)
+
 🎉 Order Confirmed!
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 📋 ORDER DETAILS
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 
 👤 Customer: Rahul Sharma
 📦 Product: Running Shoes
@@ -130,7 +129,6 @@ curl -X POST https://xbnff4ak5e.execute-api.us-east-1.amazonaws.com/prod/orders 
 📌 Order ID: 1bc33291-bfd4-425b-94ff-6ecd3e03baf1
 📊 Status: PENDING
 
-━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 Thank you for shopping with us! 🛍️
 
 ---
@@ -143,7 +141,7 @@ Python 3.9+ installed
 
 ---
 Step-by-Step Deployment
-# 1. Clone the repository
+**# 1. Clone the repository**
 git clone https://github.com/vaibhav343343/serverless-ecommerce-aws.git
 cd serverless-ecommerce-aws
 
@@ -158,7 +156,7 @@ aws cloudformation deploy \
   --stack-name ecommerce-stack \
   --capabilities CAPABILITY_IAM
 
-# 4. Build and deploy frontend
+**# 4. Build and deploy frontend**
 cd frontend
 npm install
 npm run build
