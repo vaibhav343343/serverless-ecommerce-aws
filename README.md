@@ -175,7 +175,7 @@ echo "✅ Frontend URL: http://your-unique-bucket-name.s3-website-us-east-1.amaz
 echo "✅ API URL: https://xbnff4ak5e.execute-api.us-east-1.amazonaws.com/prod"
 
 ---
-**📁 Project Structure**
+📁 Project Structure
 serverless-ecommerce-python/
 ├── 📂 frontend/                 # React application
 │   ├── 📂 src/                  # React components
