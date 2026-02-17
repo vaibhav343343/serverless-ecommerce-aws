@@ -33,9 +33,8 @@ This serverless solution **auto-scales automatically** and **costs nothing when 
 
 ## 🏗️ Architecture
 
-<p align="center">
-  <img src="architecture-dark.png" width="700"/>
-</p>
+<img width="1024" height="1230" alt="ChatGPT Image Feb 17, 2026, 02_46_33 PM" src="https://github.com/user-attachments/assets/ad15d470-5f92-4683-afe0-17a1917de1c5" />
+
 
 ### 📊 Data Flow
 1. User visits website → CloudFront serves React app from S3  
