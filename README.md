@@ -131,7 +131,6 @@ curl -X POST https://xbnff4ak5e.execute-api.us-east-1.amazonaws.com/prod/orders 
 
 Thank you for shopping with us! 🛍️
 
-
 ---
 🚀 5-Minute Deployment Guide
 Prerequisites
