@@ -115,26 +115,22 @@ curl -X POST https://xbnff4ak5e.execute-api.us-east-1.amazonaws.com/prod/orders 
   -H "Content-Type: application/json" \
   -d '{"userId":"user123","productId":"61f46829-1e8a-46d2-8322-b0a7b4a94a25","quantity":2}'
   ```
+
 ---
 📧 Email Notification (SNS)
-
 🎉 Order Confirmed!
 
 📋 ORDER DETAILS
 
 👤 Customer: Rahul Sharma
-
 📦 Product: Running Shoes
-
 🔢 Quantity: 2
-
 💰 Total: ₹2598
-
 📌 Order ID: 1bc33291-bfd4-425b-94ff-6ecd3e03baf1
-
 📊 Status: PENDING
 
 Thank you for shopping with us! 🛍️
+
 
 ---
 🚀 5-Minute Deployment Guide
