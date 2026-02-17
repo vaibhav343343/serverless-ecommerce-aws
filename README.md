@@ -12,9 +12,6 @@
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
 </p>
 
-<p align="center">
-  <b>⚡ Built in 1 Day | 💰 Zero Cost (AWS Free Tier) | 🚀 5-Minute Deploy | 🔥 Interview Ready</b>
-</p>
 
 ---
 
