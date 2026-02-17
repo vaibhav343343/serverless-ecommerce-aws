@@ -119,21 +119,23 @@ curl -X POST https://xbnff4ak5e.execute-api.us-east-1.amazonaws.com/prod/orders 
 ---
 ## 📧 Email Notification (SNS)
 
+```text
 🎉 Order Confirmed!
 
-📋 ORDER DETAILS
+ORDER DETAILS
 
-👤 Customer: Rahul Sharma
-📦 Product: Running Shoes
-🔢 Quantity: 2
-💰 Total: ₹2598
-📌 Order ID: 1bc33291-bfd4-425b-94ff-6ecd3e03baf1
-📊 Status: PENDING
+Customer: Rahul Sharma
+Product: Running Shoes
+Quantity: 2
+Total: ₹2598
+Order ID: 1bc33291-bfd4-425b-94ff-6ecd3e03baf1
+Status: PENDING
 
-Thank you for shopping with us! 🛍️
+Thank you for shopping with us!
+```
 
 ---
-🚀 5-Minute Deployment Guide
+### 🚀 5-Minute Deployment Guide
 Prerequisites
 AWS Account (Free Tier)
 AWS CLI configured (aws configure)
@@ -142,7 +144,7 @@ Python 3.9+ installed
 
 ---
 Step-by-Step Deployment
-**# 1. Clone the repository**
+### 1. Clone the repository**
 git clone https://github.com/vaibhav343343/serverless-ecommerce-aws.git
 cd serverless-ecommerce-aws
 
@@ -174,7 +176,7 @@ echo "✅ Frontend URL: http://your-unique-bucket-name.s3-website-us-east-1.amaz
 echo "✅ API URL: https://xbnff4ak5e.execute-api.us-east-1.amazonaws.com/prod"
 
 ---
-
+```
 ### 📁 Project Structure
 serverless-ecommerce-python/
 ├── 📂 frontend/                 # React application
@@ -191,7 +193,7 @@ serverless-ecommerce-python/
 ├── 📄 template.yaml              # CloudFormation template
 ├── 📄 cleanup-all.sh             # One-click cleanup script
 └── 📄 README.md                  # You're here!
-
+```
 ---
 **👨‍💻 Author**
 
