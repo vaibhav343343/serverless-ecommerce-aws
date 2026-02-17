@@ -204,25 +204,48 @@ echo "API: https://your-api-id.execute-api.us-east-1.amazonaws.com/prod"
 
 ```
 serverless-ecommerce-aws/
-├── frontend/
-│   ├── src/
-│   ├── public/
-│   └── package.json
 │
 ├── backend/
 │   ├── get-products/
-│   │   └── lambda_function.py
+│   │   ├── dynamodb create-table/
+│   │   ├── lambda_function.py
+│   │   ├── output.json
+│   │   └── requirements.txt
+│   │
 │   └── place-order/
-│       └── lambda_function.py
+│       ├── lambda_function.py
+│       ├── output.json
+│       ├── requirements.txt
+│       ├── test-payload.json
+│       └── trust-policy.json
+│
+├── frontend/
+│   ├── public/
+│   │   └── vite.svg
+│   ├── src/
+│   │   ├── assets/
+│   │   │   └── react.svg
+│   │   ├── App.css
+│   │   ├── App.jsx
+│   │   ├── index.css
+│   │   └── main.jsx
+│   ├── index.html
+│   ├── package.json
+│   ├── vite.config.js
+│   └── eslint.config.js
 │
 ├── scripts/
+│   ├── output.json
 │   └── seed-products.py
 │
+├── aws-commands.sh
+├── aws-config.txt
+├── frontend-policy.json
+├── policy.json
 ├── template.yaml
-├── cleanup-all.sh
+├── .gitignore
 └── README.md
 ```
-
 ---
 
 ## 👨‍💻 Author
