@@ -117,7 +117,8 @@ curl -X POST https://xbnff4ak5e.execute-api.us-east-1.amazonaws.com/prod/orders 
   ```
 
 ---
-📧 Email Notification (SNS)
+## 📧 Email Notification (SNS)
+
 🎉 Order Confirmed!
 
 📋 ORDER DETAILS
