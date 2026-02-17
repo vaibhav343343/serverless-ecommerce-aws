@@ -116,3 +116,126 @@ curl https://xbnff4ak5e.execute-api.us-east-1.amazonaws.com/prod/products
 curl -X POST https://xbnff4ak5e.execute-api.us-east-1.amazonaws.com/prod/orders \
   -H "Content-Type: application/json" \
   -d '{"userId":"user123","productId":"61f46829-1e8a-46d2-8322-b0a7b4a94a25","quantity":2}'
+```
+
+---
+
+## 📧 Email Notification (SNS)
+
+```text
+🎉 Order Confirmed!
+
+ORDER DETAILS
+
+Customer: Rahul Sharma
+Product: Running Shoes
+Quantity: 2
+Total: ₹2598
+Order ID: 1bc33291-bfd4-425b-94ff-6ecd3e03baf1
+Status: PENDING
+
+Thank you for shopping with us!
+```
+
+---
+
+## 🚀 5-Minute Deployment Guide
+
+### Prerequisites
+- AWS Account (Free Tier)
+- AWS CLI configured (`aws configure`)
+- Node.js and npm installed
+- Python 3.9+ installed
+
+---
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/vaibhav343343/serverless-ecommerce-aws.git
+cd serverless-ecommerce-aws
+```
+
+### 2. Setup Python environment
+```bash
+python3 -m venv venv
+
+# Linux/Mac
+source venv/bin/activate
+
+# Windows
+venv\Scripts\activate
+
+pip install boto3
+```
+
+### 3. Deploy backend (CloudFormation)
+```bash
+aws cloudformation deploy \
+  --template-file template.yaml \
+  --stack-name ecommerce-stack \
+  --capabilities CAPABILITY_IAM
+```
+
+### 4. Build and deploy frontend
+```bash
+cd frontend
+npm install
+npm run build
+
+aws s3 mb s3://your-unique-bucket-name
+aws s3 website s3://your-unique-bucket-name --index-document index.html
+aws s3 sync dist/ s3://your-unique-bucket-name/ --delete
+```
+
+### 5. Seed products database
+```bash
+cd ..
+python3 scripts/seed-products.py
+```
+
+### 6. Get live URLs
+```bash
+echo "Frontend: http://your-bucket.s3-website-us-east-1.amazonaws.com"
+echo "API: https://your-api-id.execute-api.us-east-1.amazonaws.com/prod"
+```
+
+---
+
+## 📁 Project Structure
+
+```
+serverless-ecommerce-aws/
+├── frontend/
+│   ├── src/
+│   ├── public/
+│   └── package.json
+│
+├── backend/
+│   ├── get-products/
+│   │   └── lambda_function.py
+│   └── place-order/
+│       └── lambda_function.py
+│
+├── scripts/
+│   └── seed-products.py
+│
+├── template.yaml
+├── cleanup-all.sh
+└── README.md
+```
+
+---
+
+## 👨‍💻 Author
+
+**Vaibhav Sudrik**  
+Cloud Computing Student  
+
+- Email: vaibhavsudrik2005@gmail.com  
+- LinkedIn: www.linkedin.com/in/vaibhav-sudrik-aa59ab34  
+- GitHub: github.com/vaibhav343343  
+
+---
+
+## 📝 License
+This project is licensed under the **MIT License**.
