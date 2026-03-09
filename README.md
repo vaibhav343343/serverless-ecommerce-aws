@@ -257,7 +257,3 @@ Cloud Computing Student
 - LinkedIn: www.linkedin.com/in/vaibhav-sudrik-aa59ab34  
 - GitHub: github.com/vaibhav343343  
 
----
-
-## 📝 License
-This project is licensed under the **MIT License**.
