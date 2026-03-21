@@ -254,6 +254,5 @@ serverless-ecommerce-aws/
 Cloud Computing Student  
 
 - Email: vaibhavsudrik2005@gmail.com  
-- LinkedIn: www.linkedin.com/in/vaibhav-sudrik-aa59ab34  
-- GitHub: github.com/vaibhav343343  
+- LinkedIn: www.linkedin.com/in/vaibhav-sudrik-aa59ab34   
 
